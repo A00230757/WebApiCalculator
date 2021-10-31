@@ -24,5 +24,24 @@ namespace UnitTestCalculator
             additionresult = CalculatorTasks.AdditionTask(number1, number2);
             Assert.AreEqual(desiredresult, additionresult);
         }
+
+        [DataTestMethod]
+        [DataRow(5, 5, 0)]
+        [DataRow(7, 5, 2)]
+        [DataRow(1, 9, 8)]
+        [DataRow(8, 8, 0)]
+        [DataRow(3, 3, 0)]
+        [DataRow(6, 30, 24)]
+        [DataRow(17, 17, 0)]
+        [DataRow(11, 11, 0)]
+        [DataRow(65, 12, 53)]
+        [DataRow(45, 5, 40)]
+        [DataRow(99, 1, 98)]
+        public void CheckClassLibrarySolveSubtractionChallenge(double number1, double number2, double desiredresult)
+        {
+            double subtractionresult;
+            subtractionresult = CalculatorTasks.SubtractionTask(number1, number2);
+            Assert.AreEqual(desiredresult, subtractionresult);
+        }
     }
 }
