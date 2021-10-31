@@ -24,5 +24,10 @@ namespace ClassLibraryCalculator
             }
             return answer;
         }
+        public static double MultiplicationTask(double number1, double number2)//this task of class library accept
+                                                                         //two numbers of double data type and return their product
+        {
+            return number1 * number2;
+        }
     }
 }
