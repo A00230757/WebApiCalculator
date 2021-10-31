@@ -4,5 +4,6 @@ namespace ClassLibraryCalculator
 {
     public class Class1
     {
+
     }
 }
