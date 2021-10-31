@@ -29,5 +29,10 @@ namespace ClassLibraryCalculator
         {
             return number1 * number2;
         }
+        public static double DivisionTask(double number1, double number2)//this task of class library accept
+                                                                         //two numbers of double data type and return their quotient  as a floating-point number
+        {
+            return number1 / number2;
+        }
     }
 }
