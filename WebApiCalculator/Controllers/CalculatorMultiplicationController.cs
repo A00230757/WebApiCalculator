@@ -16,8 +16,8 @@ namespace WebApiCalculator.Controllers
         public double MultiplyTwoNumbers([FromQuery] double number1, [FromQuery] double number2)
         //this method of WebApi accept two numbers
         //in double data type
-        //and use class library task subtracton already
-        //made to return the result of subtraction
+        //and use class library task multiplication already
+        //made to return the result of product of two numbers
         {
 
             return CalculatorTasks.MultiplicationTask(number1, number2);

@@ -16,8 +16,8 @@ namespace WebApiCalculator.Controllers
         public double DivideTwoNumbers([FromQuery] double number1, [FromQuery] double number2)
         //this method of WebApi accept two numbers
         //in double data type
-        //and use class library task subtracton already
-        //made to return the result of subtraction
+        //and use class library task division already
+        //made to return the result of their quotient
         {
 
             return CalculatorTasks.DivisionTask(number1, number2);

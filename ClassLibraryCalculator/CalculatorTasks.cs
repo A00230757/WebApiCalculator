@@ -10,19 +10,11 @@ namespace ClassLibraryCalculator
             return number1 + number2;
         }
         public static double SubtractionTask(double number1, double number2)//this task of class library accept
-                                                                         //two numbers of double data type and check which number is greater
-                                                                         //amd then subtract them and return the result
+                                                                         //two numbers of double data type 
+                                                                         //and then subtract them and return the result
         {
-            double answer=0;
-            if( number1>number2)
-            {
-               answer = number1-number2;
-            }
-            else
-            {
-                answer = number2-number1;
-            }
-            return answer;
+            
+            return number1 - number2;
         }
         public static double MultiplicationTask(double number1, double number2)//this task of class library accept
                                                                          //two numbers of double data type and return their product
@@ -32,7 +24,18 @@ namespace ClassLibraryCalculator
         public static double DivisionTask(double number1, double number2)//this task of class library accept
                                                                          //two numbers of double data type and return their quotient  as a floating-point number
         {
-            return number1 / number2;
+            
+            double answer = 0;
+
+            if (number2 == 0)
+            {
+                answer = -1;
+            }
+            else
+            {
+                answer = number1 / number2;
+            }
+            return answer;
         }
     }
 }
