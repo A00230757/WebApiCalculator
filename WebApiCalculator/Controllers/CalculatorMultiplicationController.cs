@@ -12,7 +12,7 @@ namespace WebApiCalculator.Controllers
     [ApiController]
     public class CalculatorMultiplicationController : ControllerBase
     {
-       /* [HttpGet]
+        [HttpGet]
         public double MultiplyTwoNumbers([FromQuery] double number1, [FromQuery] double number2)
         //this method of WebApi accept two numbers
         //in double data type
@@ -21,6 +21,6 @@ namespace WebApiCalculator.Controllers
         {
 
             return CalculatorTasks.MultiplicationTask(number1, number2);
-        }*/
+        }
     }
 }
