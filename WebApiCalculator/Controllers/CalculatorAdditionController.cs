@@ -10,17 +10,21 @@ namespace WebApiCalculator.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class CalculatorController : ControllerBase
+    public class CalculatorAdditionController : ControllerBase
     {
         [HttpGet]
         public double AddTwoNumbers([FromQuery] double number1, [FromQuery] double  number2)
             //this method of WebApi accept two numbers
             //in double data type
-            //and use class library tasks already
+            //and use class library task addition already
             //made to return their sum
         {
 
             return CalculatorTasks.AdditionTask(number1, number2);
         }
+
+       
+
+     
     }
 }
